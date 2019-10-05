@@ -1,0 +1,172 @@
+﻿@{
+    ViewBag.Title = "FormSeach";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="gap-10">
+    <div class="col-xs-12 col-sm-12">
+        <div class="form-group form-icon-right mb-10">
+            <label>Chọn địa điểm</label>
+            <select class="form-control">
+                <option value="" disabled selected hidden>Chọn tỉnh thành</option>
+                <option value="1">Hà Nội</option>
+                <option value="2">TP. Hồ Chí Minh</option>
+                <option value="3">Đà Nẵng</option>
+                <option value="4">Phú Quốc</option>
+                <option value="5">Nha Trang</option>
+                <option value="6">Quy Nhơn</option>
+                <option value="7">Sapa (Lào Cai)</option>
+                <option value="8">Vũng Tàu</option>
+                <option value="9">Hải Phòng</option>
+                <option value="10">Bình Dương</option>
+                <option value="11">Ninh Bình</option>
+                <option value="12">Đà Lạt</option>
+                <option value="13">Huế</option>
+                <option value="14">Bến Tre</option>
+                <option value="15">Hạ Long (Quảng Ninh)</option>
+                <option value="16">Buôn Ma Thuột (Đăk Lăk) </option>
+                <option value="17">Cần Thơ</option>
+                <option value="18">Vinh (Nghệ An)</option>
+                <option value="20">Cam Ranh (Khánh Hòa)</option>
+                <option value="21">Pleiku (Gia Lai) </option>
+                <option value="22">Thanh Hóa</option>
+                <option value="23">Thái Nguyên</option>
+                <option value="24">Quảng Ngãi</option>
+                <option value="25">Biên Hòa</option>
+                <option value="26">Tp Phan Thiêt (Bình Thuận)</option>
+                <option value="27">Hội An</option>
+            </select>
+            <i class="fa fa-map-marker"></i>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <div class="form-group form-icon-right mb-10">
+            <label>Ngày nhận xe</label>
+            <input name="arrival_date" class="form-control mb-0" id="dpd1" placeholder="Chọn ngày" type="text">
+            <i class="fa fa-calendar"></i>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <div class="form-group">
+            <label>Giờ nhận xe</label>
+            <select class="custom-select">
+                <option value="0">00:00 </option>
+                <option value="30">00:30 </option>
+                <option value="60">01:00 </option>
+                <option value="90">01:30 </option>
+                <option value="120">02:00 </option>
+                <option value="150">02:30 </option>
+                <option value="180">03:00 </option>
+                <option value="210">03:30 </option>
+                <option value="240">04:00 </option>
+                <option value="270">04:30 </option>
+                <option value="300">05:00 </option>
+                <option value="330">05:30 </option>
+                <option value="360">06:00 </option>
+                <option value="390">06:30 </option>
+                <option value="420">07:00 </option>
+                <option value="450">07:30 </option>
+                <option value="480">08:00 </option>
+                <option value="510">08:30 </option>
+                <option value="540">09:00 </option>
+                <option value="570">09:30 </option>
+                <option value="600">10:00 </option>
+                <option value="630">10:30 </option>
+                <option value="660">11:00 </option>
+                <option value="690">11:30 </option>
+                <option value="720">12:00 </option>
+                <option value="750">12:30 </option>
+                <option value="780">13:00 </option>
+                <option value="810">13:30 </option>
+                <option value="840">14:00 </option>
+                <option value="870">14:30 </option>
+                <option value="900">15:00 </option>
+                <option value="930">15:30 </option>
+                <option value="960">16:00 </option>
+                <option value="990">16:30 </option>
+                <option value="1020">17:00 </option>
+                <option value="1050">17:30 </option>
+                <option value="1080">18:00 </option>
+                <option value="1110">18:30 </option>
+                <option value="1140">19:00 </option>
+                <option value="1170">19:30 </option>
+                <option value="1200">20:00 </option>
+                <option value="1230">20:30 </option>
+                <option value="1260">21:00 </option>
+                <option value="1290">21:30 </option>
+                <option value="1320">22:00 </option>
+                <option value="1350">22:30 </option>
+                <option value="1380">23:00 </option>
+                <option value="1410">23:30 </option>
+            </select>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <div class="form-group form-icon-right mb-10">
+            <label>Ngày trả xe</label>
+            <input name="departure_date" class="form-control mb-0" id="dpd2" placeholder="Chọn ngày" type="text">
+            <i class="fa fa-calendar"></i>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-6">
+        <div class="form-group">
+            <label>Giờ trả xe</label>
+            <select class="custom-select">
+                <option value="0">00:00 </option>
+                <option value="30">00:30 </option>
+                <option value="60">01:00 </option>
+                <option value="90">01:30 </option>
+                <option value="120">02:00 </option>
+                <option value="150">02:30 </option>
+                <option value="180">03:00 </option>
+                <option value="210">03:30 </option>
+                <option value="240">04:00 </option>
+                <option value="270">04:30 </option>
+                <option value="300">05:00 </option>
+                <option value="330">05:30 </option>
+                <option value="360">06:00 </option>
+                <option value="390">06:30 </option>
+                <option value="420">07:00 </option>
+                <option value="450">07:30 </option>
+                <option value="480">08:00 </option>
+                <option value="510">08:30 </option>
+                <option value="540">09:00 </option>
+                <option value="570">09:30 </option>
+                <option value="600">10:00 </option>
+                <option value="630">10:30 </option>
+                <option value="660">11:00 </option>
+                <option value="690">11:30 </option>
+                <option value="720">12:00 </option>
+                <option value="750">12:30 </option>
+                <option value="780">13:00 </option>
+                <option value="810">13:30 </option>
+                <option value="840">14:00 </option>
+                <option value="870">14:30 </option>
+                <option value="900">15:00 </option>
+                <option value="930">15:30 </option>
+                <option value="960">16:00 </option>
+                <option value="990">16:30 </option>
+                <option value="1020">17:00 </option>
+                <option value="1050">17:30 </option>
+                <option value="1080">18:00 </option>
+                <option value="1110">18:30 </option>
+                <option value="1140">19:00 </option>
+                <option value="1170">19:30 </option>
+                <option value="1200">20:00 </option>
+                <option value="1230">20:30 </option>
+                <option value="1260">21:00 </option>
+                <option value="1290">21:30 </option>
+                <option value="1320">22:00 </option>
+                <option value="1350">22:30 </option>
+                <option value="1380">23:00 </option>
+                <option value="1410">23:30 </option>
+            </select>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="col-sm-12">
+        <button class="btn btn-block btn-primary btn-icon mt-5">Tìm kiếm <span class="icon"><i class="fa fa-search"></i></span></button>
+    </div>
+    <div class="clear"></div>
+</form>

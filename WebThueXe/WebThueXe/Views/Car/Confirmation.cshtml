@@ -1,0 +1,179 @@
+﻿
+@{
+    ViewBag.Title = "Confirmation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var Order = (Model.EF.OrderDetail)ViewBag.OrderDetail;
+    var Car = (Model.EF.Car)ViewBag.CarDetail;
+    var province = (Model.EF.Province)ViewBag.Province;
+
+}
+
+<div class="main-wrapper">
+    <div class="breadcrumb-wrapper">
+
+        <div class="container booking-step">
+            <div class="row gap-0">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="step-item active">
+
+                        <a href="#">
+
+                            <div class="line"></div>
+                            <div class="step-item">
+                                <div class="number"><div class="inner">1</div></div>
+                                <p>Chọn xe</p>
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <div class="step-item active">
+
+                        <a href="#">
+
+                            <div class="line"></div>
+                            <div class="step-item">
+                                <div class="number"><div class="inner">2</div></div>
+                                <p>Chi tiết hóa đơn</p>
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <div class="step-item active">
+
+                        <a href="#">
+
+                            <div class="line"></div>
+                            <div class="step-item">
+                                <div class="number"><div class="inner">3</div></div>
+                                <p>Xác nhận</p>
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="confirm-summary clearfix">
+
+            <div class="image">
+                <img src="@Car.Image" alt="Top Destinations">
+            </div>
+            <div class="heading">
+                <div class="raty-wrapper sp-2 mb-5">
+                    <br />
+                    <span class="star-rate rated-40 mr-10"></span>
+                </div>
+                <h4>@Car.Name</h4>
+                <p>@province.Name - <a href="#" class="font16"><i class="fa fa-map-marker"></i> xem bản đồ</a></p>
+            </div>
+            <div class="content">
+
+                <div class="confirm-date">
+
+                    <div class="icon">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+
+                    <div class="content">
+                        <ul>
+                            <li><span class="absolute">Ngày nhận xe: </span>@Order.PickUp</li>
+                            <li><span class="absolute">Ngày trả xe: </span>@Order.DropOff</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row mt-30">
+            <div class="col-sm-6 mb-30" data-match-height="confirm">
+                <div class="metro-box-wrapper equal-height">
+
+                    <div class="heading">
+                        <h3>Thông tin thanh toán</h3>
+                    </div>
+                    <div class="content">
+
+                        <ul class="confirm-list">
+                            <li><span class="absolute font600">Họ tên:</span>@Order.Name</li>
+                            <li><span class="absolute font600">Email: </span>@Order.Email</li>
+                            <li><span class="absolute font600">Địa chỉ: </span>@Order.Address</li>
+                            <li><span class="absolute font600">Số điện thoại: </span>@Order.Phone</li>
+                            <li><span class="absolute font600">Phương thức thanh toán: </span>Thanh toán sau khi trả xe</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-6 mb-30" data-match-height="confirm">
+
+                <div class="metro-box-wrapper equal-height">
+
+                    <div class="heading">
+                        <h3>Price Information</h3>
+                    </div>
+                    <div class="content">
+
+                        <ul class="confirm-list inverse">
+
+                            <li>
+                                <span class="absolute">@Car.Price</span>
+                                <span class="font600">Đơn giá</span><br>
+                                <br>@Car.Name
+                                <h6> (@Order.PickUp - @Order.DropOff)</h6>
+                            </li>
+
+                            <li class="subtotal bt">
+                                <span class="absolute">@Order.Price</span>
+                                Giá trước thuế:
+                            </li>
+
+                            <li class="subtotal">
+                                <span class="absolute">@Order.IncludedVAT</span>
+                                Thuế và phí dịch vụ:
+                            </li>
+
+                            <li class="total bt mb-20">
+                                <span class="absolute"><span class="text-primary">@((Order.Price + Order.IncludedVAT)*)</span><br></span>
+                                <strong>Tổng cộng</strong><br>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="text-right mb-50">
+
+            <a href="/Success" class="btn btn-primary btn-lg btn-icon">Xác nhận và đặt xe<span class="icon"><i class="pe-7s-angle-right"></i></span></a>
+        </div>
+
+    </div>
+</div>

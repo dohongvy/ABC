@@ -1,0 +1,107 @@
+﻿@model WebThueXe.Models.RegisterModel
+
+@{
+    ViewBag.Title = "Đăng ký";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section jsFooter{
+    <script>
+        $('#btnSelectImage').on('click', function (e) {
+            e.preventDefault();
+            var finder = new CKFinder();
+            finder.selectActionFunction = function (url) {
+                $('#txtImage').val(url);
+            };
+            finder.popup();
+        });
+    </script>
+}
+<div class="main-wrapper">
+    <div class="container">
+        <!-- Nested Row within Card Body -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-center" style="margin-top:20px">
+                    <h1 class="h4 text-gray-900 mb-3">Đăng ký</h1>
+                </div>
+                <hr />
+                @using (Html.BeginForm("Register", "User", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div claas="form-group">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        @if (ViewBag.Success != null)
+                        {
+                            <div class="alert alert-success">@ViewBag.Success</div>
+                        }
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-11 ">
+                            @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @placeholder = "Tên đăng nhập" })
+                            @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-11">
+                            @Html.PasswordFor(model => model.Password, new { @class = "form-control", @placeholder = "Mật khẩu" })
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-11">
+                            @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "form-control", @placeholder = "Xác nhận mật khẩu" })
+                            @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-11">
+                            @Html.TextBoxFor(model => model.Name, new { @class = "form-control", @placeholder = "Họ tên" })
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-11">
+                            @Html.TextAreaFor(model => model.Address, new { @class = "form-control", @placeholder = "Địa chỉ" })
+                            @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-11">
+                            @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = "Email" })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-11">
+                            @Html.TextBoxFor(model => model.Phone, new { @class = "form-control", @placeholder = "Số điện thoại" })
+                            @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <div class="col-md-8">
+                                @Html.TextBoxFor(model => model.Avatar, new { @class = "form-control", @placeholder = "Ảnh đại diện", id = "txtImage" })
+                                @Html.ValidationMessageFor(model => model.Avatar, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-2">
+                                <a class="text-color-02" id="btnSelectImage" href="#">Chọn ảnh</a>
+                            </div>
+                        </div>
+                    <div class="form-group text-center ">
+                        <div class="col-md-offset-3 col-md-6">
+                            <input type="submit" value="Đăng ký" class="btn btn-danger" />
+                        </div>
+                    </div>
+                }
+            </div>
+            <div>
+                <div class="hero col-md-6" style="background-image:url(http://sharp-shipping.com/images/grafica/south-africa-shipping/travel-with-your-car/travel-with-car.jpg);margin-top:50px;margin-bottom:50px"></div>
+            </div>
+        </div>
+    </div>
+</div>

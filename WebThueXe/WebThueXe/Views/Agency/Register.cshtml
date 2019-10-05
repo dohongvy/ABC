@@ -1,0 +1,117 @@
+﻿@model WebThueXe.Models.RegisterModel
+
+@{
+    ViewBag.Title = "Đăng ký làm đối tác";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section jsFooter{
+    <script>
+        $('#btnSelectImage').on('click', function (e) {
+            e.preventDefault();
+            var finder = new CKFinder();
+            finder.selectActionFunction = function (url) {
+                $('#txtImage').val(url);
+            };
+            finder.popup();
+        });
+    </script>
+}
+<div class="main-wrapper">
+    <div class="container">
+        <!-- Nested Row within Card Body -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-center" style="margin-top:20px">
+                    <h1 class="h4 text-gray-900 mb-3">Đăng ký làm đối tác</h1>
+                </div>
+                <hr />
+                @using (Html.BeginForm("Register", "Agency", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+
+
+                    <div claas="form-group">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        @if (ViewBag.Success != null)
+                        {
+                            <div class="alert alert-success">@ViewBag.Success</div>
+                        }
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10 ">
+                            @Html.TextBoxFor(model => model.UserName, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.ConfirmPassword, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.TextAreaFor(model => model.Address, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Phone, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.Phone, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Avatar, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-6">
+                            @Html.TextBoxFor(model => model.Avatar, new { @class = "form-control", id = "txtImage" })
+                            @Html.ValidationMessageFor(model => model.Avatar, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-2">
+                            <a class="text-color-02" id="btnSelectImage" href="#">Chọn ảnh</a>
+                        </div>
+                    </div>
+                    <div class="form-group text-center">
+                        <div class="col-md-offset-3 col-md-6">
+                            <input type="submit" value="Đăng ký" class="btn btn-danger" />
+                        </div>
+                    </div>
+                }
+            </div>
+            <div>
+                <div class="hero col-md-6" style="background-image:url(http://sharp-shipping.com/images/grafica/south-africa-shipping/travel-with-your-car/travel-with-car.jpg);margin-top:50px;margin-bottom:50px"></div>
+            </div>
+        </div>
+    </div>
+</div>

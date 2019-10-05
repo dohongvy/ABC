@@ -1,0 +1,93 @@
+﻿@model Model.EF.Car
+
+@{
+    ViewBag.Title = "ViewDetail";
+    Layout = "~/Areas/Agency/Views/Shared/_Layout.cshtml";
+    var province = (List<Model.EF.Province>)ViewBag.province;
+    var carattributedetail = (List<Model.EF.CarAttributeDetail>)ViewBag.carattributedetail;
+    var carattribute = (List<Model.EF.CarAttribute>)ViewBag.carattribute;
+
+}
+@section header{
+    Xem thông tin xe
+}
+@section jsFooter{
+    <script>
+        $('#btnSelectImage').on('click', function (e) {
+            e.preventDefault();
+            var finder = new CKFinder();
+            finder.selectActionFunction = function (url) {
+                $('#txtImage').val(url);
+            };
+            finder.popup();
+        });
+
+        var editor = CKEDITOR.replace('txtContent', {
+            customConfig: '/Content/Admin/js/plugins/ckeditor/config.js'
+        });
+    </script>
+}
+<div class="col-lg-12">
+    <div class="panel-body">
+        <div class="row">
+                @using (Html.BeginForm("ViewDetail", "Car", FormMethod.Get))
+                {
+                    @Html.AntiForgeryToken()
+
+                }
+                <div class="card shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="image">
+                                <img src="@Model.Image" style="width:250px;height:250px" alt="Top Destinations">
+                            </div>
+
+                            <ul class="hotel-featured-list">
+                                <li>
+                                    <h5 class="font400 text-uppercase mb-15 font16">@Model.Name</h5>
+                                </li>
+
+                                <li>
+                                    <span class="absolute">Loại Xe:</span>
+                                    @Model.Type chỗ
+                                </li>
+
+                                <li>
+                                    @foreach (var item in province)
+                                    {
+                                        if (item.ID == Model.ProvinceId)
+                                        {
+                                            <span class="absolute">Địa chỉ xe: </span> @item.Name
+
+                                        }
+                                    }
+                                </li>
+                                <li>
+                                    <span class="absolute">Giá: </span> @Model.Price VND
+                                </li>
+                                <li>
+                                    <span class="absolute">Tiện ích xe:</span>
+                                    @foreach (var item2 in carattributedetail)
+                                    {
+                                        if (item2.CarId == Model.ID)
+                                        {
+                                            foreach (var item3 in carattribute)
+                                            {
+                                                if (item3.ID == item2.CarAttributeId)
+                                                {
+                                                     <ul> - @item3.Attribute</ul>
+                                                }
+                                            }
+                                        }
+                                    }
+                                </li>
+                            </ul>
+                            <div class="btn btn-outline-warning">
+                                <a href="/Agency/Car/Edit/@Model.ID">Cập nhật</a>
+                            </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+</div>
+</div>

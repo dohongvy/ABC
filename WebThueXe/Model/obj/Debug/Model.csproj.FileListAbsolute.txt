@@ -1,0 +1,63 @@
+F:\WebThueXe\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+F:\WebThueXe\Model\obj\Debug\Model.csprojAssemblyReference.cache
+F:\WebThueXe\Model\bin\Debug\Model.dll.config
+F:\WebThueXe\Model\bin\Debug\Model.dll
+F:\WebThueXe\Model\bin\Debug\Model.pdb
+F:\WebThueXe\Model\bin\Debug\Common.dll
+F:\WebThueXe\Model\bin\Debug\EntityFramework.dll
+F:\WebThueXe\Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\WebThueXe\Model\bin\Debug\PagedList.dll
+F:\WebThueXe\Model\bin\Debug\PagedList.Mvc.dll
+F:\WebThueXe\Model\bin\Debug\Common.pdb
+F:\WebThueXe\Model\bin\Debug\EntityFramework.xml
+F:\WebThueXe\Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\WebThueXe\Model\bin\Debug\PagedList.xml
+F:\WebThueXe\Model\bin\Debug\PagedList.Mvc.xml
+F:\WebThueXe\Model\obj\Debug\Model.csproj.CopyComplete
+F:\WebThueXe\Model\obj\Debug\Model.dll
+F:\WebThueXe\Model\obj\Debug\Model.pdb
+F:\WebThueXe\Model\bin\Debug\CKFinder.dll
+F:\WebThueXe\Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\WebThueXe\Model\bin\Debug\System.Web.Helpers.dll
+F:\WebThueXe\Model\bin\Debug\System.Web.Mvc.dll
+F:\WebThueXe\Model\bin\Debug\System.Web.Razor.dll
+F:\WebThueXe\Model\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\WebThueXe\Model\bin\Debug\System.Web.WebPages.dll
+F:\WebThueXe\Model\bin\Debug\System.Web.WebPages.Razor.dll
+F:\WebThueXe\Model\bin\Debug\System.Web.Helpers.xml
+F:\WebThueXe\Model\bin\Debug\System.Web.Mvc.xml
+F:\WebThueXe\Model\bin\Debug\System.Web.Razor.xml
+F:\WebThueXe\Model\bin\Debug\System.Web.WebPages.xml
+F:\WebThueXe\Model\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\WebThueXe\Model\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\Model.dll.config
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\Model.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\Model.pdb
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\CKFinder.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\Common.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\EntityFramework.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\PagedList.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\System.Web.Helpers.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\System.Web.Mvc.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\System.Web.Razor.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\System.Web.WebPages.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\Common.pdb
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\EntityFramework.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\PagedList.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\System.Web.Helpers.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\System.Web.Mvc.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\System.Web.Razor.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\System.Web.WebPages.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\obj\Debug\Model.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Model\obj\Debug\Model.pdb

@@ -1,0 +1,38 @@
+﻿@model List<Model.EF.Menu>
+@{
+    var session = (UserLogin)Session[WebThueXe.Common.CommonConstants.USER_SESSION];
+}
+@if (session == null)
+{
+    <ul class="nav navbar-nav" id="responsive-menu">
+
+        @foreach (var item in Model)
+        {
+            <li>
+                <a href="@item.Link" target="@item.Target">@item.Text</a>
+            </li>
+        }
+        <li>@Html.ActionLink("Đăng nhập", "Login", "User")</li>
+    </ul>
+
+}
+else
+{
+    <ul class="nav navbar-nav" id="responsive-menu">
+        @foreach (var item in Model)
+        {
+            <li>
+                <a href="@item.Link" target="@item.Target">@item.Text</a>
+            </li>
+        }
+            <li>
+                <a href="#">@session.UserName</a>
+                <ul>
+                    <li>@Html.ActionLink("Quản lý tài khoản","Edit","User")</li>
+                    <li>@Html.ActionLink("Thoát", "Logout", "User")</li>
+                </ul>
+            </li>               
+    </ul>
+}
+
+

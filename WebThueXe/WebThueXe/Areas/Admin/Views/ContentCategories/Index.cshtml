@@ -1,0 +1,78 @@
+﻿@model PagedList.IPagedList<Model.EF.Category>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Quản lý danh mục";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section header{
+    Danh mục tin tức
+}
+@section jsFooter{
+    <script src="/Content/Admin/js/controller/userController.js"></script>
+}
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary"></h6>
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("Index", "Category", FormMethod.Get))
+            {
+            <div class="row">
+                <div class="col-md-4">
+                    <form class=" d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" value="@ViewBag.SearchString" name="searchString" class="form-control bg-light border-0 small" placeholder="Tìm kiếm..." aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-success">Tìm kiếm</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div style="margin-left: 650px">
+                    <a href="/Admin/ContentCategories/Create" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i> Thêm mới</a>
+                </div>
+            </div>
+               <hr>
+
+            }
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Loại tin tức</th>
+                            <th>Ngày tạo</th>
+                            <th>Ngày cập nhật</th>
+                            <th>#</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr id="row_@item.ID">
+
+                                <td>@item.ID</td>
+                                <td>@item.Name</td>
+                                <td>@item.CreateDate</td>
+                                <td>@item.ModifiedDate</td>
+                                <td>
+                                    <a href="/Admin/ContentCategories/Edit/@item.ID">Sửa</a>
+                                    |
+                                    @Ajax.ActionLink("Xóa", "Delete", new { @id = item.ID }, new AjaxOptions
+                               {
+                                   Confirm = "Bạn có muốn xóa bản ghi này?",
+                                   OnComplete = "$('#row_" + item.ID + "').remove()",
+                                   HttpMethod = "Delete"
+                               })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+
+                </table>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, @ViewBag.SearchString }))
+            </div>
+        </div>
+    </div>
+</div>

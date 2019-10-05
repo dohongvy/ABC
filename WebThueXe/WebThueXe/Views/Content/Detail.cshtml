@@ -1,0 +1,224 @@
+﻿@model Model.EF.Content
+@{
+    ViewBag.Title = "Chi tiết";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var tag = (List<Model.EF.Tag>)ViewBag.Tags;
+    var ListCategory = (List<Model.EF.Category>)ViewBag.ListCategory;
+    var comment = (List<Model.EF.ContentReview>)ViewBag.comment;
+    var listNewContents = (List<Model.EF.Content>)ViewBag.ListNewContents;
+    var ListAllTag = (List<Model.EF.Tag>)ViewBag.ListAllTag;
+
+}
+
+<div class="equal-content-sidebar-wrapper">
+
+    <div class="equal-content-sidebar-by-js right-sidebar">
+
+        <div class="container">
+
+            <div class="sidebar-wrapper">
+
+                <aside>
+
+                    <div class="mb-10"></div>
+
+                    <div class="quick-search clearfix">
+                        <form class="search-form">
+                            <input type="text" name="search" class="form-control mb-0" placeholder="Tìm kiếm...">
+                            <button class="btn"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="section-title">
+                        <h3><span>Danh mục</span></h3>
+                    </div>
+
+                    <ul class="sidebar-cat clearfix mb-30 mmt">
+                        @foreach (var item in ListCategory)
+                        {
+                            <li><a href="~/Content/Detail/@item.ID">@item.Name<span class="absolute"></span></a></li>
+                        }
+                    </ul>
+
+                    <div class="section-title">
+                        <h3><span>Tags</span></h3>
+                    </div>
+
+                    <div class="tag-cloud clearfix mb-30">
+                        @foreach (var item in ListAllTag)
+                        {
+                            <a href="#" class="tag-item">@item.Name</a>
+                        }
+                    </div>
+                    <div class="section-title">
+                        <h3><span>Bài viết được xem nhiều</span></h3>
+                    </div>
+
+                    <ul class="recent-post-sm clearfix mb-30">                       
+                            @foreach (var item in listNewContents)
+                            {
+                                <li class="clearfix">
+                                    <a href="~/Content/Detail/@item.ID">
+                                        <div class="image">
+                                            <img src="@item.Image" alt="Popular Post">
+                                        </div>
+                                        <div class="content">
+                                            <h3>@item.Name</h3>
+                                            <p class="recent-post-sm-meta"><i class="fa fa-comments mr-5"></i></p>
+                                        </div>
+                                    </a>
+                                </li>
+                            }
+
+                    </ul>
+
+                    <div class="clear"></div>
+
+                </aside>
+
+            </div>
+
+            <div class="content-wrapper">
+
+                <div class="mb-10"></div>
+
+                <div class="content-wrapper">
+
+                    <div class="mb-10"></div>
+
+                    <div class="blog-wrapper blog-single">
+
+                        <article class="blog-item-full">
+                            <div class="image">
+                                <a href="~/Content/Detail/@Model.ID">
+                                    <img src="@Model.Image" alt="Blog">
+                                </a>
+                            </div>
+                            <div class="content">
+
+                                <div class="meta">
+                                    <i class="fa fa-calendar"></i> <a href="#">@Model.CreateDate</a> <span class="mh-5">|</span> <i class="fa fa-user"></i> <a href="#"> @Model.CreateDate</a> <span class="mh-5"> | </span> 
+                                        @foreach (var item2 in ListCategory)
+                                        {
+                                            if (item2.ID == Model.CategoryID)
+                                            {
+                                                <i class="fa fa-folder"></i> <a href="#">@item2.Name</a>
+                                            }
+                                        }
+                                    
+                                </div>
+
+                                <h3 class="blog-title">@Model.Name</h3>
+
+                                <div class="blog-entry">
+                                    @Html.Raw(Model.Detail)
+                                </div>
+
+                                <div class="clear mb-40"></div>
+
+                                <div class="tag-cloud-wrapper clearfix mb-40">
+                                    <div class="tag-cloud-heading">Tags: </div>
+                                    <div class="tag-cloud tags clearfix">
+                                        @{
+                                            foreach (var item in tag)
+                                            {
+                                                <a href="/tag/@item.ID" class="tag-item">@item.Name</a>
+                                            }
+                                        }
+                                    </div>
+                                </div>
+
+                                <div class="clear"></div>
+
+                                <div class="comment-wrapper mb-50">
+                                    @foreach (var item in comment)
+                                    {
+                                        <ul class="comment-item">
+                                            <li>
+                                                <div class="comment-avatar">
+                                                    <img src="\Content\User\extretion\images\testimonial\testimonial-03.jpeg" alt="author image">
+                                                </div>
+                                                <div class="comment-header">
+                                                    <a href="#" class="comment-reply">phản hồi</a>
+                                                    <a href="#" class="font600 font16">@item.Name</a>
+                                                    <span class="comment-time">@item.CreateDate</span>
+                                                </div>
+                                                <div class="comment-content">
+                                                    <p>@item.Content</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    }
+
+                                    <div class="clear"></div>
+                                    <div class="block text-center font12"><a href="#" class="btn btn-primary">Xem thêm</a></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-5 col-md-4">
+
+                                        <div class="section-title text-left">
+                                            <h3><span>Bình luận</span></h3>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <form method="post" action="post" class="comment-form">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-6">
+                                            <div class="form-group">
+                                                <label for="comment-name">Họ và tên <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="comment-name" placeholder="Tên của bạn">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6">
+                                            <div class="form-group">
+                                                <label for="comment-email">Email <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="comment-email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="comment-message">Nội dung <span class="text-danger">*</span></label>
+                                                <textarea name="message" id="comment-message" placeholder="Nội dung" class="form-control" rows="8"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="submit" name="sendMessage" value="Bình luận" class="btn btn-primary">
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <div class="clear"></div>
+
+                </div>
+
+                <div class="clear"></div>
+
+            </div>
+            <div class="clear"></div>
+
+        </div>
+
+            <div class="clear"></div>
+
+        </div>
+
+    </div>
+
+
+<div class="clear"></div>
+

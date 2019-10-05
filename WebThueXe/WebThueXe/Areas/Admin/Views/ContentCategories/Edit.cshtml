@@ -1,0 +1,49 @@
+﻿@model Model.EF.Category
+@{
+    ViewBag.Title = "Cập nhật danh mục";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section header{
+      Cập nhật danh mục
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Nhập danh mục
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            @using (Html.BeginForm("Edit", "ContentCategories", FormMethod.Post))
+                            {
+                                @Html.AntiForgeryToken()
+                                <div class="form-horizontal">
+                                    <hr />
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    <div class="form-group">
+                                        @Html.TextBoxFor(model => model.Name, new { @class = "form-control", @placeholder = "Tên danh mục" })
+                                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-6 col-md-offset-3 ">
+                                            <input type="submit" value="Tạo" class="btn btn-danger" />
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div>
+    @Html.ActionLink("Trở về trang trước", "Index")
+</div>

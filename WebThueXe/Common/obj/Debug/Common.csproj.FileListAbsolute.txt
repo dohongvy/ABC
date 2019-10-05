@@ -1,0 +1,11 @@
+F:\WebThueXe\Common\bin\Debug\Common.dll
+F:\WebThueXe\Common\bin\Debug\Common.pdb
+F:\WebThueXe\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+F:\WebThueXe\Common\obj\Debug\Common.dll
+F:\WebThueXe\Common\obj\Debug\Common.pdb
+C:\Users\Tuan Kha\Downloads\WebThueXe\Common\bin\Debug\Common.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Common\bin\Debug\Common.pdb
+C:\Users\Tuan Kha\Downloads\WebThueXe\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Tuan Kha\Downloads\WebThueXe\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Tuan Kha\Downloads\WebThueXe\Common\obj\Debug\Common.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\Common\obj\Debug\Common.pdb

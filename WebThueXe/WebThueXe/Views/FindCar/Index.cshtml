@@ -1,0 +1,310 @@
+﻿@model PagedList.IPagedList<Model.EF.Car>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Tìm Xe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var listPriceCars = (List<Model.EF.Car>)ViewBag.ListPriceCars;
+    var province = (List<Model.EF.Province>)ViewBag.province;
+    var carattributedetail = (List<Model.EF.CarAttributeDetail>)ViewBag.carattributedetail;
+    var carattribute = (List<Model.EF.CarAttribute>)ViewBag.carattribute;
+
+
+}
+@section jsFooter{
+    <script>
+            //disable typing in date picker input
+         $(document).ready(function () {
+             var minDate = new Date();
+             $("#pickup").datepicker({
+                 showAnim: 'drop',
+                 numberOfMonths: 1,
+                 minDate: minDate,
+                 dateFormat: 'dd-mm-yy',
+                 onClose: function (selectedDate) {
+                     $('#dropoff').datepicker("option", "minDate", selectedDate);
+                 }
+             });
+             $("#dropoff").datepicker({
+                 showAnim: 'drop',
+                 numberOfMonths: 1,
+                 minDate: minDate,
+                 dateFormat: 'dd-mm-yy',
+                 onClose: function (selectedDate) {
+                     $('#return').datepicker("option", "minDate", selectedDate);
+                 }
+                 //disable typing in date picker input end
+             });
+         });
+    </script>
+}
+<div class="main-wrapper">
+    <div class="breadcrumb-wrapper">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-8">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Tìm xe</a>
+                        </li>
+                        <li class="active">Danh sách xe</li>
+                    </ol>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 hidden-xs">
+                    <p class="hot-line"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="two-tone-layout left-sidebar">
+
+        <div class="equal-content-sidebar">
+
+            <div class="container">
+
+                <div class="sidebar-wrapper ">
+                    <aside>
+
+                        <div class="mb-10"></div>
+
+                        <div class="result-search-form-wrapper clearfix">
+
+                            <h3>Tìm Xe</h3>
+                            <div class="inner">
+                                <form class="gap-10" method="get">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="form-group form-icon-right mb-10">
+                                            <label>Chọn địa điểm</label>
+                                            <select class="form-control" name="province">
+                                                <option value="" disabled selected hidden>Chọn tỉnh thành</option>
+                                                @foreach (var item in province)
+                                                {
+                                                    <option value="@item.ID">@item.Name</option>
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group form-icon-right mb-10">
+                                            <label>Ngày nhận xe</label>
+                                            <input name="pickup_date" class="form-control" id="pickup" placeholder="Chọn ngày" type="text">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group form-icon-right mb-10">
+                                            <label>Ngày trả xe</label>
+                                            <input name="dropoff_date" class="form-control" id="dropoff" placeholder="Chọn ngày" type="text">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6">
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <button type="submit" class="btn btn-block btn-primary btn-icon mt-5">Tìm kiếm <span class="icon"><i class="fa fa-search"></i></span></button>
+                                    </div>
+                                    <div class="clear"></div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="result-filter-wrapper clearfix">
+                            <h3>
+                                <span class="icon"><i class="fa fa-sliders"></i></span> Bộ Lọc
+                            </h3>
+                            <div class="another-toggle filter-toggle">
+                                <h4 class="active">Loại xe</h4>
+                                <div class="another-toggle-content">
+                                    <div class="another-toggle-inner">
+                                        <div class="form-group mb-0">
+                                            <select class="custom-select" id="gender">
+                                                <option value="0">Tất cả</option>
+                                                <option value="">4 chỗ‎</option>
+                                                <option value="2">7 chỗ‎</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="another-toggle filter-toggle">
+                                <h4 class="active">Tính năng</h4>
+                                <div class="another-toggle-content">
+                                    <div class="another-toggle-inner">
+                                        <div class="checkbox-block font-icon-checkbox">
+                                            <input id="filter_facility-1" name="filter_facility" type="checkbox" class="checkbox" checked="checked">
+                                            <label class="" for="filter_facility-1">Định vị GPS</label>
+                                        </div>
+                                        <div class="checkbox-block font-icon-checkbox">
+                                            <input id="filter_facility-2" name="filter_facility" type="checkbox" class="checkbox">
+                                            <label class="" for="filter_facility-2">Bluetooth</label>
+                                        </div>
+                                        <div class="checkbox-block font-icon-checkbox">
+                                            <input id="filter_facility-3" name="filter_facility" type="checkbox" class="checkbox">
+                                            <label class="" for="filter_facility-3">Bản đồ</label>
+                                        </div>
+                                        <div class="checkbox-block font-icon-checkbox">
+                                            <input id="filter_facility-4" name="filter_facility" type="checkbox" class="checkbox">
+                                            <label class="" for="filter_facility-4">Số tự động</label>
+                                        </div>
+                                        <div id="facility-more-less" class="collapse">
+                                            <div class="inner">
+                                                <div class="checkbox-block font-icon-checkbox">
+                                                    <input id="filter_facility-6" name="filter_facility" type="checkbox" class="checkbox">
+                                                    <label class="" for="filter_facility-6">Wifi</label>
+                                                </div>
+                                                <div class="checkbox-block font-icon-checkbox">
+                                                    <input id="filter_facility-7" name="filter_facility" type="checkbox" class="checkbox">
+                                                    <label class="" for="filter_facility-7">Ghế trẻ em</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-more-less" data-toggle="collapse" data-target="#facility-more-less">Xem thêm</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="mb-20"></div>
+                    </aside>
+                </div>
+
+                <div class="content-wrapper">
+                    <div class="mb-10"></div>
+                    <div class="result-status">
+                        <p><span class="text-primary font700"></span><span class="text-primary font700"></span>Hiển thị kết quả</p>
+
+                        <a href="" class="show-on-map" style="background-image:url('/Content/User/extretion/images/show-on-map.gif');">
+                            <span>
+                                <img src="Content\User\extretion\images\show-map-marker.png" alt="images" class="block">
+                                <span class="bg-primary absolute">Xem bản đồ</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="mb-10"></div>
+                    <div class="sort-wrapper">
+                        <ul class="clearfix">
+                            <li class="text">Bộ lọc: </li>
+                            <li class="active">
+                                <a href="#">Giá <i class="fa fa-long-arrow-up"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">Tên</a>
+                            </li>
+                            <li>
+                                <a href="#">Xếp hạng</a>
+                            </li>
+                            <li class="list-grid">
+                                <a href="#"><i class="fa fa-align-justify"></i></a>
+                            </li>
+                            <li class="list-grid active">
+                                <a href="#"><i class="fa fa-th-large"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hotel-item-list-wrapper mb-40">
+                        @foreach (var item in Model)
+                        {
+                            var url = "/Car/Detail/" + item.MetaTitle + "/" + item.ID;
+                            <div class="hotel-item-list">
+                                <div class="image" style="background-image:url('@item.Image');"></div>
+                                <div class="content">
+                                    <div class="heading">
+                                        <h4>@item.Name</h4>
+                                        @foreach (var item2 in province)
+                                        {
+                                            if (item2.ID == item.ProvinceId)
+                                            {
+                                                <p>
+                                                    <span class="star-rate rated-40 mr-10"></span>
+                                                    <i class="fa fa-map-marker text-primary mr-5"></i>@item2.Name
+                                                </p>
+                                            }
+                                        }
+                                    </div>
+                                    <div class="short-info">
+                                        @item.Description
+                                    </div>
+                                </div>
+                                <div class="">
+                                    @foreach (var item3 in carattributedetail)
+                                    {
+                                        if (item3.CarId == item.ID)
+                                        {
+                                            foreach (var item4 in carattribute)
+                                            {
+                                                if (item4.ID == item3.CarAttributeId)
+                                                {
+                                                    <div class="abssolute-mid text-center">
+                                                        <p class="text-primary">
+                                                            <i class="fa fa-check-circle"> @item4.Attribute</i>
+                                                        </p>
+                                                    </div>
+                                                }
+                                            }
+                                        }
+                                    }
+                                </div>
+                                <div class="absolute-right">
+                                    <div class="price-wrapper">
+                                        <p class="price">
+                                            <span class="block">khoảng từ</span>
+                                            <span class="number">@item.Price</span>
+                                            <span class="block">/ngày</span>
+                                        </p>
+                                        <a href="@url" class="btn btn-danger btn-sm">Chi tiết</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="result-paging-wrapper">
+                        <div class="row">
+                            <div class="col-sm-6">
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="paging">
+                                    <li class="disable">
+                                        <a href="#">&laquo;</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">5</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">6</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">&raquo;</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-20"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="clear"></div>
+

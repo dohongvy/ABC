@@ -1,0 +1,354 @@
+﻿@model Model.EF.OrderDetail
+@{
+    ViewBag.Title = "OrderDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var car = (Model.EF.Car)ViewBag.car;
+}
+<div class="main-wrapper">
+    <div class="breadcrumb-wrapper">
+
+        <div class="container booking-step">
+            <div class="row gap-0">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="step-item active">
+
+                        <a href="#">
+
+                            <div class="line"></div>
+                            <div class="step-item">
+                                <div class="number">
+                                    <div class="inner">1</div>
+                                </div>
+                                <p>Chọn xe </p>
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <div class="step-item active">
+
+                        <div class="line"></div>
+                        <div class="step-item">
+                            <div class="number">
+                                <div class="inner">2</div>
+                            </div>
+                            <p>Thông tin đơn thuê xe</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <div class="step-item">
+                        <div class="line"></div>
+                        <div class="step-item">
+                            <div class="number">
+                                <div class="inner">3</div>
+                            </div>
+                            <p>Xác nhận</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="two-tone-layout">
+
+        <div class="equal-content-sidebar">
+
+            <div class="container">
+
+                <div id="sticky-sidebar" class="sidebar-wrapper ">
+
+                    <aside>
+
+                        <div class="mb-10"></div>
+
+                        <div class="room-page-right-sidebar alt">
+
+                            <div class="room-page-heading">
+
+                                <div class="meta-option clearfix mt-10">
+                                    <div class="raty-wrapper sp-2 mb-5">
+                                        <div class="star-rating-12px-alt" data-rating-score="4"></div>
+                                    </div>
+                                </div>
+                                <h4>@car.Name</h4>
+                                <p>
+                                    <i class="fa fa-map-marker"></i>@car.ProvinceId
+                                </p>
+
+                            </div>
+
+                            <div class="image">
+                                <img src="@car.Image" alt="Top Destinations">
+                            </div>
+                            <div class="content mb-30">
+                                <h5>
+                                    Your Dates
+                                    <a data-toggle="modal" href="#changeDateModal"></a>
+                                </h5>
+                                <ul>
+                                    <li class="clearfix">
+                                        <span class="absolute">Ngày nhận: </span>
+                                        @car.PickUp
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="absolute">Ngày trả: </span>
+                                        @car.DropOff
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content mb-30">
+                                <h5>Price</h5>
+                                <ul class="inverse">
+                                    <li class="clearfix">
+                                        <span class="absolute">@car.Price</span>
+                                        Giá ban đầu
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="absolute">@car.IncludedVAT</span>
+                                        Thuế VAT và phí dịch vụ
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="absolute">3 ngày</span>
+                                        Số ngày thuê
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content total-price">
+                                <h5>
+                                    Tổng cộng
+                                    <span>@((car.Price + car.IncludedVAT)*3)</span>
+                                </h5>
+                                <p class="mt-20">Giá đã bao gồm thuế 10% và phí dịch vụ 5%.</p>
+                            </div>
+                        </div>
+                        <div class="mb-30"></div>
+
+                    </aside>
+
+                </div>
+
+                <div class="content-wrapper">
+
+                    <div class="mb-10"></div>
+
+                    <div class="success-box">
+
+                        <div class="icon">
+
+                            <span><i class="ri ri-check-square"></i></span>
+
+                        </div>
+
+                        <div class="content">
+                            <h4>Điền thông tin yêu cầu ở bên dưới để hoàn tất việc đặt xe. </h4>
+                            <p>Chủ xe sẽ có 24h dể chấp nhận yêu cầu thuê xe của bạn. Kể từ khi việc đặt xe được chấp nhận, chúng tôi sẽ gửi email cho bạn thông tin chi tiết hóa đơn và thông tin liên hệ của chủ xe.</p>
+                        </div>
+
+                    </div>
+                    @using (Html.BeginForm("OrderDetail","Car",FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <form id="paymentFormValid" method="get" action="#">
+
+                            <div class="metro-box-wrapper">
+
+                                <div class="heading">
+                                    <h3>Thông tin hóa đơn</h3>
+                                </div>
+                                <div class="content">
+
+                                    <div class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 col-md-2 control-label">Họ Tên</label>
+                                            <div class="col-sm-6 col-md-6">
+                                                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-4 col-md-2 control-label">Email</label>
+                                            <div class="col-sm-6 col-md-6">
+                                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-4 col-md-2 control-label">Số điện thoại</label>
+                                            <div class="col-sm-6 col-md-6">
+                                                @Html.TextBoxFor(model => model.Phone, new { @class = "form-control" })
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 col-md-2 control-label">Địa chỉ</label>
+                                            <div class="col-sm-6 col-md-6">
+                                                @Html.TextBoxFor(model => model.Address, new { @class = "form-control" })
+                                            </div>
+                                        </div>
+                                    </div>                      
+                                </div>
+                            </div>
+                            <div class="metro-box-wrapper">
+
+                                <div class="heading">
+                                    <h3>Thông tin thanh toán</h3>
+                                </div>
+                                <div class="content">
+
+                                    <div class="another-toggle coupon mb-20">
+                                        <h4>Bạn có mã giảm giá?</h4>
+                                        <div class="another-toggle-content">
+                                            <div class="another-toggle-inner">
+                                                <div class="row gap-10">
+                                                    <div class="col-xs-12 col-sm-12">
+                                                        <label class="mb-10">Mã giảm giá</label>
+                                                    </div>
+                                                    <div class="col-xss-12 col-xs-7 col-sm-5">
+                                                        <input type="text" class="form-control mb-0" placeholder="Voucher code">
+                                                    </div>
+                                                    <div class="col-xss-12 col-xs-5 col-sm-3">
+                                                        <button class="btn btn-success">Áp dụng Voucher</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="payment-select">
+                                        <div class="form-group">
+                                            <label class="col-sm-12 col-md-12 mb-10">Phương thức thanh toán </label>
+                                        </div>
+                                    </div>
+                                    <div id="paymentOption" class="payment-option-wrapper">
+
+                                        <div class="row">
+
+                                            <div class="col-sm-12">
+                                                <div class="radio-block font-icon-radio">
+                                                    <input id="payments1" name="payments" type="radio" class="radio" value="paymentPaypal">
+                                                    <label class="" for="payments1"><span>Thanh toán ngay khi trả xe</span><img src=""></label>
+                                                </div>
+                                            </div>
+                                            <div class="clear mb-10"></div>
+
+                                            <div class="col-sm-12">
+
+                                                <div class="radio-block font-icon-radio">
+                                                    <input id="payments2" name="payments" type="radio" class="radio" value="paymentsCreditCard">
+                                                    <label class="" for="payments2"><span>Thanh toán bằng thể Visa/MasterCard</span> <img src=""></label>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="clear mb-10"></div>
+
+                                            <div class="col-sm-12">
+                                                <div class="radio-block font-icon-radio">
+                                                    <input id="payments3" name="payments" type="radio" class="radio" value="paymentPaypal">
+                                                    <label class="" for="payments3"><span>Paypal</span> <img src=""></label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div id="paymentsCreditCard" class="payment-option-form">
+
+                                            <div class="inner">
+
+                                                <h4 class="mb-20">Tổng số tiền thanh toán: @car.Price VND</h4>
+                                                <p>Số tiền trong tài khoản của quý khách sẽ bị trừ ngay khi hoàn tất đơn hàng. </p>
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 col-md-3 control-label">Cardholder's name </label>
+                                                        <div class="col-sm-6 col-md-6">
+                                                            <input type="text" class="form-control mb-0" placeholder="First Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 col-md-3 control-label">Card number </label>
+                                                        <div class="col-sm-6 col-md-6">
+                                                            <input type="text" class="form-control mb-0" placeholder="Last Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 col-md-3 control-label">Expiry date</label>
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <select class="custom-select">
+                                                                <option value="0">Tháng</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <select class="custom-select">
+                                                                <option value="0">Năm</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 col-md-3 control-label">Card number<small class="hoover-help of-label" data-toggle="tooltip" data-placement="top" title="Số CVV/CVC chính là mã bảo mật thanh toán quốc tế. Mã này bao gồm 3 chữ số được in ở phía sau của thẻ tín dụng.">Số CVC là gì?</small> </label>
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <input type="text" class="form-control mb-0" placeholder="Last Name">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                        <div id="paymentPaypal" class="payment-option-form">
+                                            <div class="inner">
+
+                                                <h4 class="mb-20">Tổng số tiền phải trả: @car.Price VND</h4>
+                                                <p>Số tiền trong tài khoản của quý khách sẽ bị trừ ngay khi hoàn tất đơn hàng.</p>
+                                                <p>
+                                                    Sau khi chọn 'Đặt xe' Bạn sẽ được chuyển tới trang PayPal để hoàn tất thanh toán.
+                                                    <strong>Bạn phải hoàn tất thanh toán hoặc đơn hàng sẽ bị hủy</strong>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="payment-congrate">
+
+                                <div class="inner">
+
+                                    <p class="lead">
+                                        Bạn cần hoàn tất các thông tin yều cầu bên trên để được hỗ trợ tốt nhất.
+                                        <span class="font700"></span>
+                                    </p>
+                                    <input type="submit" class="btn" value="Đặt xe">
+
+                                    <p class="payment-term">
+                                        Khi gửi đơn yêu cầu, bạn đồng ý với
+                                        <a href="#">điều khoản</a> cũng như
+                                        <a href="#"> chính sách hủy đặt xe </a> của
+                                        <a href="#"> RenOto</a> .
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <div class="mb-40"></div>
+
+                    }
+            </div>
+        </div>
+    </div>
+</div>

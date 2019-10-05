@@ -1,0 +1,68 @@
+﻿@model WebThueXe.Models.LoginModel
+
+@{
+    ViewBag.Title = "Đăng nhập";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="main-wrapper">
+    <div class="container">
+        <div class="col-xl-10 col-lg-12 col-md-9">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-center" style="margin-top:80px">
+                        <h1 class="h4 text-gray-900 mb-3">Đăng nhập</h1>
+                    </div>
+                    @using (Html.BeginForm("Login", "User", FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        <hr />
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.UserName, new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(model => model.UserName, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Password, new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-offset-2 col-md-10 ">
+                                <div class="checkbox-block font-icon-checkbox">
+                                    <input id="remember_me_checkbox" name="remember_me_checkbox" class="checkbox" value="First Choice" type="checkbox">
+                                    <label class="" for="remember_me_checkbox">@Html.CheckBoxFor(m => m.RememberMe) Nhớ đăng nhập</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group text-center">
+                            <div class="col-md-offset-3 col-md-6">
+                                <input type="submit" value="Đăng nhập" class="btn btn-danger" />
+                                <a href="/User/LoginFacebook" class="btn btn-facebook"><i class="fa fa-facebook-f"> Đăng nhập bằng Facebook</i></a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="text-center">
+                            <a class="text-color-03" href="/ResetPassword">Quên mật khẩu?</a>
+                        </div>
+                        <div class="text-center">
+                            <a class="text-color-02"> Bạn chưa có tài khoản?</a>
+                            <a class="text-color-03" href="/Register">Đăng ký ngay!</a>
+                        </div>
+                    </div>
+                    }
+                </div>
+                <div>
+                    <div class="hero col-md-6" style="background-image:url(http://sharp-shipping.com/images/grafica/south-africa-shipping/travel-with-your-car/travel-with-car.jpg);margin-top:50px;margin-bottom:50px"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

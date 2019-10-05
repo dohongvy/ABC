@@ -1,0 +1,140 @@
+﻿@model PagedList.IPagedList<Model.EF.Content>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Tin tức";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var ListCategory = (List<Model.EF.Category>)ViewBag.ListCategory;
+    var listNewContents = (List<Model.EF.Content>)ViewBag.ListNewContents;
+    var ListAllTag = (List<Model.EF.Tag>)ViewBag.ListAllTag;
+
+}
+
+<div class="equal-content-sidebar-wrapper">
+
+    <div class="equal-content-sidebar-by-js right-sidebar">
+
+        <div class="container">
+
+            <div class="sidebar-wrapper">
+
+                <aside>
+
+                    <div class="mb-10"></div>
+
+                    <div class="quick-search clearfix">
+                        <form class="search-form">
+                            <input type="text" name="search" class="form-control mb-0" placeholder="Tìm kiếm...">
+                            <button class="btn"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="section-title">
+                        <h3><span>Danh mục</span></h3>
+                    </div>
+
+                    <ul class="sidebar-cat clearfix mb-30 mmt">
+                        @foreach (var item in ListCategory)
+                        {
+                            <li><a href="~/Content/@item.ID">@item.Name<span class="absolute"></span></a></li>
+                        }
+                    </ul>
+
+                    <div class="section-title">
+                        <h3><span>Tags</span></h3>
+                    </div>
+
+                    <div class="tag-cloud clearfix mb-30">
+                        @foreach (var item in ListAllTag)
+                        {
+                            <a href="#" class="tag-item">@item.Name</a>
+                        }
+                        </div>
+                    <div class="section-title">
+                        <h3><span>Bài viết được xem nhiều</span></h3>
+                    </div>
+
+                    <ul class="recent-post-sm clearfix mb-30">
+                        @foreach (var item in listNewContents)
+                        {
+                            <li class="clearfix">
+                                <a href="~/Content/@item.MetaTitle">
+                                    <div class="image">
+                                        <img src="@item.Image" alt="Popular Post">
+                                    </div>
+                                    <div class="content">
+                                        <h3>@item.Name</h3>
+                                        <p class="recent-post-sm-meta"><i class="fa fa-comments mr-5"></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                        }
+
+                    </ul>
+
+                    <div class="clear"></div>
+
+                </aside>
+
+            </div>
+
+            <div class="content-wrapper">
+
+                <div class="mb-10"></div>
+
+                <div class="blog-wrapper">
+                    @foreach (var item in Model)
+                    {
+                        <article class="blog-item-full">
+                            <div class="image">
+                                <a href="~/Content/Detail/@item.ID">
+                                    <img src="@item.Image" style="width:600px;height:500px"alt="Blog">
+                                </a>
+                            </div>
+                            <div class="content">
+
+                                <div class="meta">
+                                    <i class="fa fa-calendar"></i> <a href="#">@item.CreateDate</a> <span class="mh-5">|</span> <i class="fa fa-user"></i> <a href="#">@item.CreateBy</a> <span class="mh-5"> |  </span>
+                                    @foreach (var item2 in ListCategory)
+                                    {
+                                        if (item2.ID == item.CategoryID)
+                                        {
+                                            <i class="fa fa-folder"></i> <a href="#">@item2.Name</a>
+                                        }
+                                    }
+                                </div>
+                                <h3 class="blog-title"><a href="/Content/Detail/@item.ID">@item.Name</a></h3>
+
+                                <p>@item.Description...</p>
+
+                                <a href="/Content/Detail/@item.ID" class="btn-read-more">xem thêm</a>
+
+                            </div>
+                        </article>
+                    }
+
+                </div>
+               
+                <div class="result-paging-wrapper text-center">                  
+                    <ul class="paging mb-20">
+                        <li>
+                            @Html.PagedListPager(Model, page => Url.Action("Index", new { page, @ViewBag.SearchString }))
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="clear"></div>
+
+            </div>
+
+            <div class="clear"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="clear"></div>
+

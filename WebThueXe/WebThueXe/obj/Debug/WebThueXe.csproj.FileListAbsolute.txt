@@ -1,0 +1,277 @@
+F:\WebThueXe\WebThueXe\obj\Debug\WebThueXe.csproj.CoreCompileInputs.cache
+F:\WebThueXe\WebThueXe\obj\Debug\WebThueXe.csprojAssemblyReference.cache
+F:\WebThueXe\WebThueXe\bin\WebThueXe.dll.config
+F:\WebThueXe\WebThueXe\bin\WebThueXe.dll
+F:\WebThueXe\WebThueXe\bin\WebThueXe.pdb
+F:\WebThueXe\WebThueXe\bin\roslyn\csc.exe
+F:\WebThueXe\WebThueXe\bin\roslyn\csc.exe.config
+F:\WebThueXe\WebThueXe\bin\roslyn\csc.rsp
+F:\WebThueXe\WebThueXe\bin\roslyn\csi.exe
+F:\WebThueXe\WebThueXe\bin\roslyn\csi.exe.config
+F:\WebThueXe\WebThueXe\bin\roslyn\csi.rsp
+F:\WebThueXe\WebThueXe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\WebThueXe\WebThueXe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\Microsoft.Managed.Core.targets
+F:\WebThueXe\WebThueXe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\WebThueXe\WebThueXe\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.AppContext.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Collections.Immutable.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Console.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Globalization.Calendars.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.IO.Compression.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.IO.FileSystem.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Net.Http.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Net.Sockets.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Reflection.Metadata.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.ValueTuple.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Xml.XmlDocument.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Xml.XPath.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\WebThueXe\WebThueXe\bin\roslyn\vbc.exe
+F:\WebThueXe\WebThueXe\bin\roslyn\vbc.exe.config
+F:\WebThueXe\WebThueXe\bin\roslyn\vbc.rsp
+F:\WebThueXe\WebThueXe\bin\roslyn\VBCSCompiler.exe
+F:\WebThueXe\WebThueXe\bin\roslyn\VBCSCompiler.exe.config
+F:\WebThueXe\WebThueXe\bin\Antlr3.Runtime.dll
+F:\WebThueXe\WebThueXe\bin\Autofac.dll
+F:\WebThueXe\WebThueXe\bin\CKFinder.dll
+F:\WebThueXe\WebThueXe\bin\CKSource.FileSystem.dll
+F:\WebThueXe\WebThueXe\bin\CKSource.FileSystem.Local.dll
+F:\WebThueXe\WebThueXe\bin\Common.dll
+F:\WebThueXe\WebThueXe\bin\EntityFramework.dll
+F:\WebThueXe\WebThueXe\bin\EntityFramework.SqlServer.dll
+F:\WebThueXe\WebThueXe\bin\Facebook.dll
+F:\WebThueXe\WebThueXe\bin\ImageProcessor.dll
+F:\WebThueXe\WebThueXe\bin\Microsoft.AspNet.Identity.Core.dll
+F:\WebThueXe\WebThueXe\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\WebThueXe\WebThueXe\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\WebThueXe\WebThueXe\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+F:\WebThueXe\WebThueXe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.dll
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.Cookies.dll
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.dll
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.Facebook.dll
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.Google.dll
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.OAuth.dll
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.Twitter.dll
+F:\WebThueXe\WebThueXe\bin\Microsoft.Web.Infrastructure.dll
+F:\WebThueXe\WebThueXe\bin\Model.dll
+F:\WebThueXe\WebThueXe\bin\Newtonsoft.Json.dll
+F:\WebThueXe\WebThueXe\bin\NLog.dll
+F:\WebThueXe\WebThueXe\bin\Owin.dll
+F:\WebThueXe\WebThueXe\bin\PagedList.dll
+F:\WebThueXe\WebThueXe\bin\PagedList.Mvc.dll
+F:\WebThueXe\WebThueXe\bin\Pri.LongPath.dll
+F:\WebThueXe\WebThueXe\bin\System.Diagnostics.DiagnosticSource.dll
+F:\WebThueXe\WebThueXe\bin\System.Net.Http.Extensions.dll
+F:\WebThueXe\WebThueXe\bin\System.Net.Http.Formatting.dll
+F:\WebThueXe\WebThueXe\bin\System.Net.Http.Primitives.dll
+F:\WebThueXe\WebThueXe\bin\System.Web.Helpers.dll
+F:\WebThueXe\WebThueXe\bin\System.Web.Mvc.dll
+F:\WebThueXe\WebThueXe\bin\System.Web.Optimization.dll
+F:\WebThueXe\WebThueXe\bin\System.Web.Razor.dll
+F:\WebThueXe\WebThueXe\bin\System.Web.WebPages.Deployment.dll
+F:\WebThueXe\WebThueXe\bin\System.Web.WebPages.dll
+F:\WebThueXe\WebThueXe\bin\System.Web.WebPages.Razor.dll
+F:\WebThueXe\WebThueXe\bin\WebGrease.dll
+F:\WebThueXe\WebThueXe\bin\Common.pdb
+F:\WebThueXe\WebThueXe\bin\Model.pdb
+F:\WebThueXe\WebThueXe\bin\Model.dll.config
+F:\WebThueXe\WebThueXe\bin\Autofac.xml
+F:\WebThueXe\WebThueXe\bin\CKFinder.pdb
+F:\WebThueXe\WebThueXe\bin\CKSource.FileSystem.xml
+F:\WebThueXe\WebThueXe\bin\CKSource.FileSystem.Local.xml
+F:\WebThueXe\WebThueXe\bin\Facebook.xml
+F:\WebThueXe\WebThueXe\bin\ImageProcessor.xml
+F:\WebThueXe\WebThueXe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\WebThueXe\WebThueXe\bin\NLog.xml
+F:\WebThueXe\WebThueXe\bin\PagedList.xml
+F:\WebThueXe\WebThueXe\bin\PagedList.Mvc.xml
+F:\WebThueXe\WebThueXe\bin\System.Web.Helpers.xml
+F:\WebThueXe\WebThueXe\bin\System.Web.Mvc.xml
+F:\WebThueXe\WebThueXe\bin\System.Web.Optimization.xml
+F:\WebThueXe\WebThueXe\bin\System.Web.Razor.xml
+F:\WebThueXe\WebThueXe\bin\System.Web.WebPages.xml
+F:\WebThueXe\WebThueXe\bin\System.Web.WebPages.Deployment.xml
+F:\WebThueXe\WebThueXe\bin\System.Web.WebPages.Razor.xml
+F:\WebThueXe\WebThueXe\bin\Newtonsoft.Json.xml
+F:\WebThueXe\WebThueXe\bin\Antlr3.Runtime.pdb
+F:\WebThueXe\WebThueXe\bin\EntityFramework.xml
+F:\WebThueXe\WebThueXe\bin\EntityFramework.SqlServer.xml
+F:\WebThueXe\WebThueXe\bin\Microsoft.AspNet.Identity.Core.xml
+F:\WebThueXe\WebThueXe\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\WebThueXe\WebThueXe\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.xml
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.xml
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.Facebook.xml
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.Cookies.xml
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.Google.xml
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.Twitter.xml
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.OAuth.xml
+F:\WebThueXe\WebThueXe\bin\System.Diagnostics.DiagnosticSource.xml
+F:\WebThueXe\WebThueXe\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+F:\WebThueXe\WebThueXe\obj\Debug\WebThueXe.csproj.CopyComplete
+F:\WebThueXe\WebThueXe\obj\Debug\WebThueXe.dll
+F:\WebThueXe\WebThueXe\obj\Debug\WebThueXe.pdb
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\obj\Debug\WebThueXe.csprojResolveAssemblyReference.cache
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\obj\Debug\WebThueXe.csproj.CoreCompileInputs.cache
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\obj\Debug\WebThueXe.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\obj\Debug\WebThueXe.pdb
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\WebThueXe.dll.config
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\WebThueXe.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\WebThueXe.pdb
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\csc.exe
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\csc.exe.config
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\csc.rsp
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\csi.exe
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\csi.exe.config
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\csi.rsp
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.AppContext.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Console.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.IO.Compression.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Net.Http.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.ValueTuple.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\vbc.exe
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\vbc.exe.config
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\vbc.rsp
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Antlr3.Runtime.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Autofac.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\CKFinder.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\CKSource.FileSystem.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\CKSource.FileSystem.Local.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Common.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\EntityFramework.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\EntityFramework.SqlServer.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Facebook.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\ImageProcessor.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Model.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Newtonsoft.Json.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\NLog.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Owin.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\PagedList.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\PagedList.Mvc.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Pri.LongPath.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Net.Http.Extensions.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Net.Http.Formatting.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Net.Http.Primitives.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Web.Helpers.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Web.Mvc.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Web.Optimization.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Web.Razor.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Web.WebPages.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\WebGrease.dll
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Common.pdb
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Model.pdb
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Model.dll.config
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Autofac.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\CKFinder.pdb
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\CKSource.FileSystem.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\CKSource.FileSystem.Local.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Facebook.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\ImageProcessor.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\NLog.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\PagedList.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\PagedList.Mvc.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Web.Helpers.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Web.Razor.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Web.WebPages.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Web.Mvc.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Web.Optimization.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Newtonsoft.Json.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Antlr3.Runtime.pdb
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\EntityFramework.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\EntityFramework.SqlServer.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Tuan Kha\Downloads\WebThueXe\WebThueXe\bin\Microsoft.AspNet.TelemetryCorrelation.xml
