@@ -33,6 +33,7 @@ namespace Common
             {
                 str2 = str2.Replace("--", "-").ToLower();
             }
+            //Themxongxoa
             return str2;
         }
     }
