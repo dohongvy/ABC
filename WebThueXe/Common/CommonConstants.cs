@@ -11,6 +11,6 @@ namespace Common
         public static string MEMBER_GROUP = "MEMBER";
         public static string ADMIN_GROUP = "ADMIN";
         public static string AGENCY_GROUP = "AGENCY";
-
+        //hihihi
     }
 }
